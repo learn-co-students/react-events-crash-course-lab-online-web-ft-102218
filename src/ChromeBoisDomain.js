@@ -10,7 +10,7 @@ export default class ChromeBoisDomain extends Component {
      * function that has been provided and is already imported
      * (`drawChromeBoiAtCoords` expects two arguments, an x and a y coordinate)
      */
-    drawChromeBoiAtCoords(e.screenX, e.screenY); 
+    drawChromeBoiAtCoords(e.clientX, e.clientY); //Client refers to the area within the browser for which it is interacting
   }
 
   handleMouseClick = (e) => {
